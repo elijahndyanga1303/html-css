@@ -1,0 +1,198 @@
+.container-fluid input, .container-fluid button {
+    display: flex;
+    margin-right: 15px; /* Adjust margin as needed */
+}
+
+/* Style the search input */
+.container-fluid input[type=text] {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    margin-right: 5px; /* Adjust margin as needed */
+}
+
+/* Style the search button */
+.container-fluid button {
+    padding: 10px 15px;
+    background: #007bff; /* Button background color */
+    color: #fff; /* Button text color */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    
+}
+body .container-fluid input button
+{
+    display: inline;
+}
+
+/* Hover effect for the search button */
+.container-fluid button:hover {
+    background: #0056b3; /* Hover background color */
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.menu1 {
+    background-color: #333;
+    color: #fff;
+}
+
+.menu1 ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.menu1 ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+.menu1 ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.main {
+    display: flex;
+}
+
+section {
+    margin: 20px;
+}
+
+.gallery {
+    display: flex;
+    overflow-x: auto; /* Enable horizontal scrolling */
+}
+
+.imgsection {
+    display: flex;
+    flex-wrap: nowrap; /* Prevent wrapping */
+}
+
+.imgsection img {
+    width: 200px;
+    height: auto;
+    margin-right: 10px;
+    transition: transform 0.3s ease;
+}
+
+.imgsection img:hover {
+    transform: scale(1.1);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+let currentIndex = 0;
+const images = document.querySelectorAll('.imgsection img');
+
+function showImage(index) {
+    images.forEach((img, i) => {
+        if (i === index) {
+            img.style.display = 'block';
+        } else {
+            img.style.display = 'none';
+        }
+    });
+}
+
+function nextImage() {
+    currentIndex++;
+    if (currentIndex >= images.length) {
+        currentIndex = 0;
+    }
+    showImage(currentIndex);
+}
+
+function prevImage() {
+    currentIndex--;
+    if (currentIndex < 0) {
+        currentIndex = images.length - 1;
+    }
+    showImage(currentIndex);
+}
+
+// Optionally, you can add event listeners to trigger the next and previous functions
+// For example:
+// document.getElementById('nextButton').addEventListener('click', nextImage);
+// document.getElementById('prevButton').addEventListener('click', prevImage);
+
+// You would also need to add HTML buttons with ids 'nextButton' and 'prevButton' for this to work.
+
+
+
+
+
+
+
+<img src="../im1.jpg" alt="">
+                    <img src="../im8.jpg" alt="">
+                    <img src="../img.jpg" alt="">
+                    <img src="../img2.jpg" alt="">
+                    <img src="../img3.jpg" alt="">
+                   <!-- <img src="../img5.jpg" alt="">
+                    <img src="../img4.jpg" alt="">
+                    <img src="../img6.jpg" alt="">
+                    <img src="../img7.jpg" alt="">
+                    <img src="../img9.jpg" alt="">
+                    <img src="../WhatsApp%20Image%202024-03-20%20at%2022.15.03_3aafbedc.jpg" alt="">
+                    <img src="../WhatsApp%20Image%202024-03-20%20at%2022.15.03_6d5118f6.jpg" alt=""> -->
+                </div>
+
+
+
+
+
+
+
+
+                <section class="garelly">
+        <div>
+            <article style="background-image: url(../im1.jpg);">
+                <div>
+                   <h4>TOPS & JACKETS</h4>
+                   <p><small>Elevate your style with our chic tops and jackets, <br> crafted to inspire confidence with every wear.
+                    Discover the perfect blend of comfort and fashion, designed brto effortlessly enhance your wardrobe.
+                    Indulge in the allure of timeless elegance and modern <br> flair - upgrade your look today!</small></p>
+                    <a href="#later" class="button1">SHOP HERE</a>
+                </div>
+                
+            </article>
+            <article style="background-image: url(../img2.jpg);">
+                <div>
+                   <h4>BOTTOMS</h4>
+                   <p><small>Revamp your wardrobe with our sleek and versatile bottoms,<br> tailored to elevate your everyday ensemble.
+                    From classic cuts to trendy silhouettes, find the perfect fit that <br>flatters your figure and boosts your style.
+                    Experience the epitome of comfort and fashion fusion - shop ourbr
+                     collection and redefine your fashion statement!</small></p>
+                    <a href="#later" class="button1">SHOP HERE</a>
+                </div>
+                
+            </article><article style="background-image: url(../img3.jpg);">
+                <div>
+                   <h4>ACCESSORIES</h4>
+                   <p><small>Accessorize your look with our curated collection of must-have <br> accessories, designed to add flair to every outfit.
+                    From statement pieces to subtle accents, elevate your ensemble with our <br>selection crafted for sophistication and charm.
+                    Discover the perfect finishing touch to express your unique style - shop br now and let your accessories speak volumes!</small></p>
+                    <a href="#later" class="button1">SHOP HERE</a>
+                </div>
+                
+            </article>

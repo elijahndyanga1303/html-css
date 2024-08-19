@@ -1,0 +1,321 @@
+body .container-fluid
+{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-transform: uppercase;
+    background-color:pink;
+    margin-left: auto;
+    width:200%;
+    text-align:left;
+    text-decoration: none;
+    font-family: initial;
+    font-style: italic;
+}
+body, html {
+  overflow-x: hidden;
+}
+
+
+body .container-fluid ul li
+{
+   display: inline; 
+   margin-left: 0px;
+   line-height: 60px;
+}
+body  .container-fluid ul li:not(:last-child) {
+    margin-right: 30px; /* space between menu items*/
+}
+/*main*/
+.main section {
+    float: left;
+    width: 30%;
+    margin-right: 3%;
+    align-items: center;
+    list-style-type: none
+    
+}
+/* Style the search container */
+body header .container-fluid .search-container {
+    display: inline-flex;
+    align-items: center;
+    margin-right: 20px;
+  }
+  body header .container-fluid .search-container
+  {
+    position: absolute;
+    top: 10px;
+    right: 2px;
+  }
+
+
+  body header .container-fluid .search-container .search-input {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px 0 0 4px;
+  }
+  
+  body header .container-fluid .search-container .search-button {
+    padding: 8px;
+    background-color: #007bff;
+    border: none;
+    border-radius: 0 4px 4px 0;
+    cursor: pointer;
+  }
+  
+  body section .container-fluid .search-button  {
+    width: 40px; /* Adjust the size of the search icon as needed */
+    height: 45px; /* Adjust the size of the search icon as needed */
+    vertical-align: middle;
+  }
+/*main*/
+body #main1{
+    
+  background: url(../bg1.jpg);
+  height: 580px;
+  background-size: contain;
+  width: 100%;
+}
+#main1 .main1, h3{
+  color: white;
+  font-style: oblique;
+}
+#main1 .main1 hr
+{
+  
+    height: 4px; /* Adjust the thickness as needed */
+    background-color: blue; /* Change the color if desired */
+    border: none; /* Remove the default border */
+
+
+}
+
+#main1 .main2 hr
+{
+  
+    height: 4px; /* Adjust the thickness as needed */
+    background-color: fuchsia; /* Change the color if desired */
+    border: none; /* Remove the default border */
+
+
+}
+#main1 .main3 hr
+{
+  
+    height: 4px; /* Adjust the thickness as needed */
+    background-color: red; /* Change the color if desired */
+    border: none; /* Remove the default border */
+
+
+}
+
+#main1 .main2 ul{
+  font-size: large;
+  color: orangered;
+  font-style: oblique;
+}
+#main1 .main3 ul{
+  font-size: large;
+  color: aqua;
+  font-style: oblique;
+}
+
+
+section .main .main1 ul li
+{
+
+  
+  list-style-type: none;
+}
+section .main .main2 ul li
+{
+    list-style-type: none;
+}
+section .main .main3 ul li
+{
+    list-style-type: none;
+}
+
+/* garally*/
+#garelly{
+  background-color:pink;
+  padding: 60px;
+  height: 650px;
+
+
+}
+#garelly article
+{
+width: 390px;
+height: 270xpx;
+float: left;
+border-radius: 10px;
+height: 550px;
+background-size: contain;
+
+
+}
+#garelly article:first-child{
+  margin-right: 20px;
+
+}
+.garelly{
+  background:rgb(255, 255, 255, 0.50);
+  height: 100% ;
+  width:190px  ;
+  padding: 20px;
+  border-radius: 10px 0 0 10px;
+  text-align: center;
+  box-sizing: border-box;
+}
+article h4{
+  border-bottom: 1px solid red ;
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  text-align: center;
+}
+#garelly p{
+  text-align: center;
+  margin-bottom:20px ;
+}
+.button1{
+  color: #fff;
+  background-color: #ff7a00;
+  padding: 6px 20px;
+  border-radius: 3px;
+}
+.button1:hover{
+  color: #fff;
+  background-color: #02b8dd;
+}
+
+
+/*steps*/
+#steps ul{
+  margin: 80px 0;
+
+  
+
+}
+#steps
+{
+  background-color: antiquewhite;
+}
+#steps h4{
+  text-transform: uppercase;
+  margin-bottom:20px ;
+  font-size: xx-large;
+  font-style: italic;
+  color: pink;
+}
+#steps p{
+  margin-bottom: 20px;
+  font-size: large;
+  font-style: oblique;
+}
+#steps ul li{
+
+list-style-type: none;
+  width: 300px;
+  float: left;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  text-align: center;
+  margin-right: 10px;
+}
+#steps {
+  text-align: center;
+}
+
+.wrapper {
+  display: inline-block;
+}
+/*contact*/
+#contact{
+  padding: 60px 0;
+  text-align: center;
+}
+#contact h3{
+  text-transform: uppercase;
+  margin:0 auto 20px auto;
+  width: 400px;
+  border-bottom: 1px solid #02b8dd;
+  padding-bottom: 20px;
+
+}
+form{
+  margin: 60px 0 20px 0;
+
+}
+label{
+  font-weight: bold;
+  font-size: 20px;
+  margin-right:10px ;
+  color: #777;
+}
+.inputs[type="text"]{
+  padding: 10px;
+  font-size: 20px;
+  margin-right: 20px;
+  border: 2px solid #ddd;
+}
+.button2{
+  color: #fff;
+  font-size: 20px;
+  font-weight: bold;
+  padding: 11px;
+  background-color: #02b8dd;
+  border-style: none;
+  border-radius: 3px;
+}
+.button2:hover{
+  color: #fff;
+  background-color: #444;
+}
+/*footer*/
+footer {
+  background-color: #110e0e;
+  padding: 20px 0;
+  height: 200px;
+}
+
+.wrapper {
+  text-align: center;
+}
+
+.footer-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.social-icons {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.social-icons li {
+  display: inline-block;
+  margin: 0 10px;
+}
+
+.social-icons a {
+  color: #000;
+  font-size: 24px;
+  text-decoration: none;
+}
+
+.social-icons a:hover {
+  color: #007bff; /* Change color on hover */
+}
+
+.footer-content p {
+  
+  font-size: 14px;
+  align-items: center;
+}
+
